@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coding Test</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      padding: 20px;
+      background: #BCBDC0;
+      color: #565857;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-left: -10px;
+    }
+
+    p {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 15px;
+      height: 30px;
+    }
+
+    li {
+      width: 30%;
+      padding: 0 10px;
+      margin: 0 0 30px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .tab {
+      display: flex;
+      color: #8A8D91;
+      margin-bottom: 30px;
+    }
+
+    .tab-item {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .tab-item.active {
+      color: #734B5E;
+      font-weight: bold;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <h1>
+    Jacket Previewr
+  </h1>
+
+  <div class="tab">
+    <div class="tab-item active" data-category="">
+      All
+    </div>
+    <div class="tab-item" data-category="blockchain">
+      Block Chain
+    </div>
+    <div class="tab-item" data-category="javascript">
+      Javascript
+    </div>
+  </div>
+
+  <ul>
+
+  </ul>
+
+  <script>
+    var entries;
+    $.ajax({
+      url: "./samples.json",
+      success: function (response) {
+        entries = response.entries;
+        showItems();
+      }
+    })
+
+    function showItems(category) {
+      var category = category || "";
+      entries.forEach(item => {
+        if (!category || category == item.type) {
+          appendItem(item);
+        }
+      })
+    }
+
+    $(".tab-item").on("click", handleClickTab);
+
+    function handleClickTab(e) {
+      var category = $(e.currentTarget).attr("data-category");
+      if ($(e.currentTarget).hasClass("active")) return false;
+      $("ul").empty();
+      $(".tab-item").removeClass("active");
+      $(e.currentTarget).addClass("active");
+      showItems(category);
+    }
+
+    function appendItem(item) {
+      $("ul").append(
+        `<li>
+          <p>${item.title}</p>
+          <img src="${item.image}">
+        </li>`
+      );
+    }
+
+  </script>
+
+</body>
+
+</html>

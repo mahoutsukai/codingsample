@@ -1,0 +1,45 @@
+{
+  "entries": [
+    {
+      "title": "Mastering Blockchain, Second Edition",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41GnuGbD48L._SX403_BO1,204,203,200_.jpg",
+      "type": "blockchain"
+    },{
+      "title": "~ブロックチェーンの革新技術~Hyperledger Fabricによるアプリケーション開発",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51pE10giucL._SX384_BO1,204,203,200_.jpg",
+      "type": "blockchain"
+    },{
+      "title": "Mastering Blockchain, Second Edition",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51eW3hlp3jL._SX379_BO1,204,203,200_.jpg",
+      "type": "blockchain"
+    },{
+      "title": "堅牢なスマートコントラクト開発のためのブロックチェーン[技術]入門",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51ATN8TmvNL._SX384_BO1,204,203,200_.jpg",
+      "type": "blockchain"
+    },{
+      "title": "新事業企画・起業のための 実践ブロックチェーン・ビジネス",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51KZOB8ciUL._SX357_BO1,204,203,200_.jpg",
+      "type": "blockchain"
+    }, {
+      "title": "Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51I9naPg55L._SX376_BO1,204,203,200_.jpg",
+      "type": "javascript"
+    },{
+      "title": "JavaScript 第6版",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51c9uCrhHgL._SX389_BO1,204,203,200_.jpg",
+      "type": "javascript"
+    },{
+      "title": "JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51l0nocFbqL._SX384_BO1,204,203,200_.jpg",
+      "type": "javascript"
+    },{
+      "title": "JavaScriptパターン ―優れたアプリケーションのための作法",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51ZoMJ%2BrLhL._SX389_BO1,204,203,200_.jpg",
+      "type": "javascript"
+    },{
+      "title": "開眼! JavaScript ―言語仕様から学ぶJavaScriptの本質",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51jMq3%2BDklL._SX352_BO1,204,203,200_.jpg",
+      "type": "javascript"
+    }
+  ]
+}
